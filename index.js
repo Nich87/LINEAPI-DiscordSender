@@ -48,9 +48,7 @@ const lineBot = async (req, res) => {
             await axios.post(WebhookUrl, form, {
                 headers: form.getHeaders(WebhookConfig)
             });
-        } catch (err) {
-            console.error(err);
-        }
+        } catch (err) console.error(err);
     });
 };
 
