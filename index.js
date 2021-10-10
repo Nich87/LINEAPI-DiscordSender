@@ -60,3 +60,9 @@ app.post('/', line.middleware(Configs), (req, res) => {
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`)
 });
+
+/*
+Copyright (c) 2021 Nich87(とうちん#3037) & Reika87(@holo_kiri)
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+*/
