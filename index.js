@@ -54,12 +54,8 @@ const lineBot = async (req, res) => {
 
 //サーバーの作成
 const app = express();
-app.post('/', line.middleware(Configs), (req, res) => {
-    lineBot(req, res);
-});
-app.listen(PORT, () => {
-    console.log(`Listening on ${PORT}`)
-});
+app.post('/', line.middleware(Configs), (req, res) => { lineBot(req, res); });
+app.listen(PORT, () => { console.log(`Listening on ${PORT}`); });
 
 /*
 Copyright (c) 2021 Nich87(とうちん#3037) & Reika87(@holo_kiri)
